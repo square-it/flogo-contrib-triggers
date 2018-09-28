@@ -1,7 +1,7 @@
 {
   "name": "cron",
   "type": "flogo:trigger",
-  "ref": "https://github.com/square-it/flogo-contrib-triggers/cron",
+  "ref": "github.com/square-it/flogo-contrib-triggers/cron",
   "version": "0.0.1",
   "title": "Cron",
   "description": "Timer trigger with cron abilities",
