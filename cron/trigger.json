@@ -1,0 +1,23 @@
+{
+  "name": "cron",
+  "version": "0.0.1",
+  "type": "flogo:trigger",
+  "description": "Timer trigger with cron abilities",
+  "author": "fabien.fassler@sqits.net",
+  "settings":[
+    {
+      "name": "expression",
+      "type": "string"
+    }
+  ],
+  "output": [
+    {
+      "name": "time",
+      "type": "string"
+    }
+  ],
+  "handler": {
+    "settings": [
+    ]
+  }
+}
