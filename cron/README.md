@@ -1,6 +1,8 @@
 # Cron trigger
 This trigger provides your flogo application the ability to start a flow via a timer configured by a cron expression.
 
+It uses the library https://github.com/robfig/cron
+
 ## Installation
 ### Flogo Web
 
@@ -47,9 +49,24 @@ Inputs and Outputs:
 ## Settings
 | Setting     | Required | Description |
 |:------------|:---------|:------------|
-| expression  | True     | The cron expression |
+| expression  | True     | The cron expression.  |
 
-## Examples
+## Cron Expression
+
+A cron expression represents a set of times, using 6 space-separated fields.
+
+| Field name   | Mandatory? | Allowed values  | Allowed special characters |
+|--------------|:-----------|:----------------|:---------------------------|
+| Seconds      | Yes        | 0-59            | * / , -                    |
+| Minutes      | Yes        | 0-59            | * / , -                    |
+|	Hours        | Yes        | 0-23            | * / , -                    |
+|	Day of month | Yes        | 1-31            | * / , - ?                  |
+|	Month        | Yes        | 1-12 or JAN-DEC | * / , -                    |
+|	Day of week  | Yes        | 0-6 or SUN-SAT  | * / , - ?                  |
+
+See the full documentation : https://godoc.org/github.com/robfig/cron
+
+## Example
 
 ```json
 {
@@ -63,4 +80,3 @@ Inputs and Outputs:
 }
 
 ```
-
