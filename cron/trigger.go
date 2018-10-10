@@ -48,7 +48,7 @@ func (t *CronTrigger) Metadata() *trigger.Metadata {
 // Start implements trigger.Trigger.Start
 func (t *CronTrigger) Start() error {
 	// start the trigger
-	expression := t.config.Settings["expression"].(string)
+	expression := t.config.GetSetting("expression")
 
 	for _, handler := range t.handlers {
 
