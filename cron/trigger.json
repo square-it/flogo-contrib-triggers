@@ -2,7 +2,7 @@
   "name": "cron",
   "type": "flogo:trigger",
   "ref": "github.com/square-it/flogo-contrib-triggers/cron",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "title": "Cron",
   "description": "Timer trigger with cron abilities",
   "author": "fabien.fassler@sqits.net",
